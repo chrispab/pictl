@@ -18,4 +18,4 @@ class DataSample(models.Model):
         self.save()
 
     def __str__(self):
-        return self.title
+        return self.sampled_date.strftime('%Y/%m/%d: %H:%M:%S')

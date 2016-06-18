@@ -5,5 +5,16 @@
     <body>
         <p>Hi there!</p>
         <p>It works!</p>
+        {% for datasample in datasamples %}
+            <div>
+                <p>published: {{ datasample.sampled_date }}</p>
+                <h1><a href="">{{ datasample.sampled_date }}</a></h1>
+                <p>{{ datasample.temperature }}</p>
+                <p>{{ datasample.humidity }}</p>
+                <p>{{ datasample.heater }}</p>
+                <p>{{ datasample.vent }}</p>
+                <p>{{ datasample.fan }}</p>
+            </div>
+        {% endfor %}
     </body>
 </html>
